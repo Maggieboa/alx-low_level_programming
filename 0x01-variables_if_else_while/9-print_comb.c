@@ -16,8 +16,12 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 	putchar(i);
-	putchar(z);
-	putchar(y);
+
+		if (i < '9')
+		{
+			putchar(z);
+			putchar(y);
+		}
 	}
 	putchar('\n');
 	return (0);
