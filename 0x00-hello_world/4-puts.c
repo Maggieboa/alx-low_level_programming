@@ -13,6 +13,7 @@ int main(void)
 	
 	char cmm = '"';
 
-	puts(cmm, startp);
+	puts(cmm);
+	puts(startp);
 	return (0);
 }
