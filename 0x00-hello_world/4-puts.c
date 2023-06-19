@@ -10,7 +10,9 @@
 int main(void)
 {
 	char startp[] = "Programming is like building a multilingual puzzle\n";
+	
+	char cmm = '"';
 
-	puts(startp);
+	puts(cmm, startp);
 	return (0);
 }
