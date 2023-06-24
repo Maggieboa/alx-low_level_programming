@@ -1,12 +1,11 @@
 #include"main.h"
 /**
- * _isupper - uppercase letters
- * @c: character to check
+ *_isupper - uppercase letters
  *
- * Return: 0 or 1
- */
+ *@c:  local variable
+ * Return: 0 for successful or 1 when not successful
+ **/
 int _isupper(int c)
-
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
