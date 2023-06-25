@@ -2,9 +2,9 @@
 /**
 *print_line - starting point of our program
 *
+*@n: local variable
 *
-*
-*
+*Return: void
 **/
 void print_line(int n)
 {
