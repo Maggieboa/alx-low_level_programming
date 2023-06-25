@@ -23,7 +23,7 @@ for (x = 1; x <= 100; x++)
 	}
 	else if (x % 3 == 0)
 	{
-		printf("Fizz");
+		printf("Fizz ");
 	}
 	else if (x % 5 == 0)
 	{
