@@ -2,11 +2,12 @@
 /**
 *add -  starting point of our addition program
 *
-*@int: data type to be returned
 *
+*@x: local variable
+*@y: variable
 *Return: stores the result of the addition
 **/
-int add(int x, int y )
+int add(int x, int y)
 {
 	return (x + y);
 }
