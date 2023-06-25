@@ -31,7 +31,7 @@ for (x = 1; x <= 100; x++)
 	}
 	else
 	{
-		printf("%d ", x);
+		printf("%d", x);
 	}
 		if (x != 100)
 		{
