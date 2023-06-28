@@ -3,14 +3,10 @@
 *main -  starting point of our program
 *Return: should return 1
 **/
-/**
-*section1 - the first sectons1
-*Return: returns 0
-**/
-/**
-*section2 - the second section2
-*Return: 0 for success
-**/
+
+int section1(void);
+int section2(void);
+
 int main(void)
 {
 section1();
@@ -19,6 +15,10 @@ putchar('\n');
 
 return (1);
 }
+/**
+*section1 - the first sectons1
+*Return: returns 0
+**/
 int section1(void)
 {
 	putchar('a');
@@ -54,6 +54,10 @@ int section1(void)
 
 	return (0);
 }
+/**
+*section2 - the second section2
+*Return: 0 for success
+**/
 int section2(void)
 {
 	putchar('l');
