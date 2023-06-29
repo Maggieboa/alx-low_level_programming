@@ -1,30 +1,28 @@
 #include"main.h"
-#include<stdio.h>
 /**
-*_strcat - function predefined in the main.h header file
+*_strcat - function predefined 
+*in the main.h header file
 *@dest: variable
 *@src: variable
 *Return: 0 for success and 1 if not successful
 **/
 char *_strncat(char *dest, char *src, int n)
 {
-	int length, src_length;
-
+	int length, dest_length;
+	
 	length = 0;
-	src_length = 0;
-
-	while (src[length++])
+	dest_length = 0;
+	while (dest[length++])
 	{
-		src_length++;
+		dest_length++;
 	}
-	if (src[length] && length <= n)
+	if (dest[length] && length <= n)
 	{
-		dest[length++] = src[src_length++];
+		dest[dest_length++] = src[length++];
 	}
 	else
 	{
-		src[length - 1];
-		dest[length] = src[length];
+		dest[dest_length + n + 1] = src[length - 1];
 	}
 	return (dest);
 }
