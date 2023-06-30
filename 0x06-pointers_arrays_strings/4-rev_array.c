@@ -14,8 +14,6 @@ int arr_length;
 int x;
 int y;
 
-y = 0;
-x = 0;
 for (arr_length = 0; a[arr_length] <= n; arr_length++)
 {
 	y = n - 1;
