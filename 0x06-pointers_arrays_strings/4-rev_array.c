@@ -15,9 +15,9 @@ int x;
 
 x = 0;
 
-for (arr_length = n - 1; arr_length < n / 2; arr_length--)
+for (arr_length = n - 1; arr_length >= n / 2; arr_length--)
 {
-	x = a[n -1 - arr_length];
+	x = a[n - 1 - arr_length];
 	a[n - 1 - arr_length] = a[arr_length];
 	a[arr_length] = x;
 }
