@@ -10,11 +10,11 @@
 **/
 char *leet(char *s)
 {
-	int length;
-	int length2;
-	char x[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
-	
-	length = 0;
+int length;
+int length2;
+char x[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+
+length = 0;
 while (s[length])
 {
 
