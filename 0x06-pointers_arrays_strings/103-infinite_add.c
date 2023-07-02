@@ -3,11 +3,11 @@ char *add_strings(char *n1, char *n2, char *r, int r_index);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
 /**
-*_add_strings - function for adding two numbers.
+*add_strings - function for adding two numbers.
 *@n1: placeholder variable fo the number to be added.
 *@n2: placeholder for second variable to be added
 *@r: The buffer to store the result.
-*@size_r: The buffer size.
+*@r_index: array length
 * Return: placeholder for storing the results of the function.
 **/
 char *add_strings(char *n1, char *n2, char *r, int r_index)
@@ -48,7 +48,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	return (r + r_index + 1);
 }
 /**
-*_addition - function for adding two numbers.
+*infinite_add - function for adding two numbers.
 *@n1: placeholder variable fo the number to be added.
 *@n2: placeholder for second variable to be added
 *@r: The buffer to store the result.
@@ -62,7 +62,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int n2_length;
 
 	n1_length = 0;
-       	n2_length = 0;
+	n2_length = 0;
 	for (length = 0; *(n1 + length); length++)
 		n1_length++;
 
