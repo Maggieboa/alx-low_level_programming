@@ -1,6 +1,6 @@
 #include"main.h"
-/*
- *_strchr-main function
+/**
+ *_strchr - main function
  *
  *@s:placeholder variable
  *@c:placeholder variable for the char
