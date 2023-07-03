@@ -2,7 +2,7 @@
 /**
  *_memcpy-starting point of our program
  *
- *
+ *@n:placeholder variable
  *@dest:placeholder variable
  *@src:placeholder variable
  *
