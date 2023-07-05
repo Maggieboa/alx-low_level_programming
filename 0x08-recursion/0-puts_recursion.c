@@ -1,6 +1,7 @@
 #include"main.h"
 /**
- *_puts_recursion-starting point of our program to pring out a string of characters
+ *_puts_recursion-starting point of our
+ *program to pring out a string of characters
  *
  *@s:placeholder variable for our characters
  *
