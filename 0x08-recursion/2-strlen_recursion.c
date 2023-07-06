@@ -16,8 +16,9 @@ int length;
 length = 0;
 if (*s)
 {
-	while (s[length] > 0)
-	length++;
+length++;
+length += _strlen_recursion(s + 1);
+
 }
 return (length);
 }
