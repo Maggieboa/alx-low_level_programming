@@ -12,7 +12,7 @@ int main(int argc, char __attribute__((__unused__)) *argv[])
 int length;
 for (length = 0; length < argc; length++)
 {
-	printf("%d\n", argc);
+	printf("%d\n", length);
 }
 return (0);
 }
