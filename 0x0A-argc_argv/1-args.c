@@ -10,9 +10,12 @@
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
 int length;
-for (length = 0; length < argc; length++)
+
+length = 0;
+while (length < argc)
 {
-	printf("%d\n", length);
+	length++;
 }
+	printf("%d\n", length - 1);
 return (0);
 }
