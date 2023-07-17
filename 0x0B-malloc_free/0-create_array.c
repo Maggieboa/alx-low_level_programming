@@ -13,7 +13,7 @@ unsigned int length;
 
 t = malloc(sizeof(char) * size);
 
-if (t == 0)
+if (size == 0)
 {
 	return (NULL);
 }
