@@ -20,10 +20,10 @@ if (str == 0)
 
 for (size = 0; str[size]; size++)
 {
-	length++;	
+	length++;
 }
 duplicate = malloc(sizeof(char) * (length + 1));
-if(duplicate == 0)
+if (duplicate == 0)
 {
 	return (NULL);
 }
