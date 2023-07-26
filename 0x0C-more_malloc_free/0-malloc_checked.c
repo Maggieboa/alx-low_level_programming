@@ -3,7 +3,7 @@
 /**
  *malloc_checked-function to check size allocated
  *
- *@b - placeholder variable for size
+ *@b:placeholder variable for size
  *
  *Return:pointer of the malloc
  **/
@@ -13,7 +13,7 @@ void *str = malloc(b);
 
 if (str == NULL)
 {
-	exit (98);
+	exit(98);
 }
 return (str);
 
