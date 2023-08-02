@@ -19,7 +19,7 @@ if (min > max)
 }
 
 length = max - min + 1;
-index = malloc(max * length);
+index = malloc(sizeof(int) * length);
 
 if (index == NULL)
 {
