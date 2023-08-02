@@ -15,9 +15,13 @@ int len2;
 
 len = 0;
 len2 = 0;
-if (s1 == NULL && s2 == NULL)
+if (s1 == NULL)
 {
-	return (NULL);
+	s1 = "";
+}
+if (s2 == NULL)
+{
+	s2 = "";
 }
 for (size = 0; s1[size] || s2[size]; size++)
 {
