@@ -13,8 +13,6 @@ void *length;
 unsigned int index;
 char *content;
 
-length = malloc(sizeof(int) * size);
-
 if (size == 0 || size == 0)
 {
 	return (NULL);
