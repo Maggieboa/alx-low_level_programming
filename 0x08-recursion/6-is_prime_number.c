@@ -1,12 +1,5 @@
 #include"main.h"
-/**
- *
- *is_prime_number-function that finds prime numbers
- *
- *@n:plaehlder variable for the number
- *
- *Return:prime if a number is prime else return 0
- **/
+
 int is_not_prime(int num, int div);
 int is_prime_number(int n);
 
