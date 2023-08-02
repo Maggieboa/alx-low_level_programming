@@ -42,7 +42,8 @@ for (index = 0; s1[index]; index++)
 for (index = 0; s2[index] && index < n; index++)
 {
 	concat[length++] = s2[index];
-	concat[length] = '\0';
 }
+concat[length] = '\0';
+
 return (concat);
 }
