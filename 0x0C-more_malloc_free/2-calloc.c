@@ -13,7 +13,7 @@ void *length;
 unsigned int index;
 char *content;
 
-if (size == 0 || size == 0)
+if (nmemb == 0 || size == 0)
 {
 	return (NULL);
 }
