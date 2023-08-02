@@ -16,11 +16,11 @@ unsigned int index = n;
 
 if (s1 == NULL)
 {
-	s1 = "";
+	return (NULL);
 }
 if (s2 == NULL)
 {
-	s2 = "";
+	return (NULL);
 }
 
 while (s1[index])
