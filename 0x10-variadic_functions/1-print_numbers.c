@@ -2,7 +2,7 @@
 #include<stdarg.h>
 #include<stdio.h>
 /**
- *print_strings-startimng point of our program
+ *print_numbers-startimng point of our program
  *@separator:varaiable place holder
  *@n:variable placeholder
  *@...:variadic function
