@@ -20,6 +20,10 @@ if (size == 0 || size == 0)
 	return (NULL);
 }
 length = malloc(nmemb * size);
+if (length == NULL)
+{
+	return (NULL);
+}
 content = length;
 for (index = 0; index < (nmemb * size); index++)
 {
