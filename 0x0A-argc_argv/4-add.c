@@ -11,10 +11,8 @@ int main(int argc, char *argv[])
 {
 int sum, i, z;
 
-if (argc < 1)
-{
-	printf("0\n");
-}
+sum = 0;
+
 for (i = 1; i < argc; i++)
 {
 	for (z = 0; argv[i][z] != '\0'; z++)
