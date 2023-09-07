@@ -24,7 +24,6 @@ for (i = 1; i < argc; i++)
 			printf("Error\n");
 			return (1);
 		}
-		
 	}
 sum += atoi(argv[i]);
 }
