@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdio.h>
 /**
-*
-*
-*
+*print_dog - main function
+*@d:placeholder variable
+*Return: void
 *
 */
 void print_dog(struct dog *d)
