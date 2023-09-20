@@ -18,9 +18,10 @@ if (!*s)
 	_putchar('\n');
 }
 i = 0;
-for (i = 0; s[i]; i++)
+while (s[i])
 {
 	_putchar(s[i]);
+	i++;
 }
 _putchar('\n');
 
