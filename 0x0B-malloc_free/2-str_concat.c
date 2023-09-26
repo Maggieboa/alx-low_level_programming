@@ -16,11 +16,11 @@ i = 0;
 j = 0;
 if (!s1)
 {
-	return (NULL);
+	s1 = "";
 }
 if (!s2)
 {
-	return (NULL);
+	s2 = "";
 }
 for (length = 0; s1[length] != '\0' || s2[length]; length++)
 {
