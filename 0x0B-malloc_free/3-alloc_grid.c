@@ -30,7 +30,7 @@ for (i = 0; i < width; i++)
 	num[i] = malloc(sizeof(int *) * height);
 	if (!num[i])
 	{
-		while (num[i] > 0)
+		while (!num[i])
 		{
 			free(num[i--]);
 		}
