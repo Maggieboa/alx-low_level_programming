@@ -28,9 +28,9 @@ if (!num)
 for (i = 0; i < width; i++)
 {
 	num[i] = malloc(sizeof(int *) * height);
-	if (!num[i])
+	if (num[i] == NULL)
 	{
-		while (!num[i])
+		while (i >= 0)
 		{
 			free(num[i--]);
 		}
