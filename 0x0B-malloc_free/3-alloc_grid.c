@@ -25,8 +25,8 @@ if (!num)
 }
 for (i = 0; i < height; i++)
 {
-	num[i] = malloc(sizeof(int *) * width);
-	if (num[i] == NULL)
+	num[i] = malloc(sizeof(int) * width);
+	if (!num[i])
 	{
 		while (i >= 0)
 		{
