@@ -13,7 +13,7 @@ for (i = 0 ; i < argc; i++)
 {
 	;
 }
-	if (i >= 2)
+	if (i >= 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -21,7 +21,7 @@ for (i = 0 ; i < argc; i++)
 		}
 		printf("%d\n", mul);
 	}
-	if (i < 2)
+	if (i <= 2)
 	{
 		printf("Error\n");
 		return (1);
