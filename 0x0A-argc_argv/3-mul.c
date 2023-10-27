@@ -6,7 +6,7 @@
  *@argv: placeholder to the args
  *Return: 0 if successful,1 for error
  **/
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 int mul = 1, i;
 for (i = 0 ; i < argc; i++)
@@ -24,7 +24,7 @@ for (i = 0 ; i < argc; i++)
 	if (i < 2)
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
 return (0);
 }
