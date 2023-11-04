@@ -7,7 +7,7 @@
  **/
 char *_strdup(char *str)
 {
-char *str1, *str2 = str;
+char *str1 = "";
 int length, i;
 
 if (str == NULL)
@@ -16,17 +16,17 @@ if (str == NULL)
 }
 for (length = 0; str[length]; length++)
 {
-	i++;
+	;
 }
-str1 = malloc(sizeof(char) * i);
+str1 = malloc((sizeof(char) * length) + 1);
 if (str1 == NULL)
 {
 	return (NULL);
 }
 for (i = 0; i < length; i++)
 {
-	str1[i++] = str2[length];
+	str1[i] = str[i];
 }
-free(str1);
-return (str2);
+str1[i] = '\0';
+return (str1);
 }
