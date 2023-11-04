@@ -8,7 +8,7 @@
  **/
 char *str_concat(char *s1, char *s2)
 {
-unsigned int length = 0, i = 0, len2 = 0;
+unsigned int length = 0, i = 0, len2 = 0, len;
 char *s3;
 if (s1 == NULL)
 {
@@ -31,8 +31,9 @@ if (s3 == NULL)
 {
 	return (NULL);
 }
+len = i + length;
 i = 0;
-while (len2 < (i + length))
+while (len2 < len)
 {
 	if (len2 <= length)
 	{
