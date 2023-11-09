@@ -21,7 +21,7 @@ if (d != NULL)
 	}
 	else if (name != NULL)
 	{
-		printf("Name:%s \n", name);
+		printf("Name: %s \n", name);
 	}
 	if (age < 0)
 	{
@@ -29,7 +29,7 @@ if (d != NULL)
 	}
 	else if (age >= 0)
 	{
-		printf("Age:%f \n", age);
+		printf("Age: %f \n", age);
 	}
 	if (owner == NULL)
 	{
@@ -37,7 +37,7 @@ if (d != NULL)
 	}
 	else if (owner != NULL)
 	{
-		printf("Owner:%s\n", owner);
+		printf("Owner: %s\n", owner);
 	}
 }
 else
