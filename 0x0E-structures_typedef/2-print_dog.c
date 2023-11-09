@@ -10,7 +10,11 @@ void print_dog(struct dog *d)
 {
 	char *name, *owner;
 	float age;
-	
+	d = malloc(sizeof(struct dog));
+	if (d == NULL)
+	{
+		printf("");
+	}
 	name = (*d).name;
 	age = (*d).age;
 	owner = (*d).owner;
