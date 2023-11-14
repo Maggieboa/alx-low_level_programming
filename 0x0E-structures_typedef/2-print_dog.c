@@ -19,7 +19,7 @@ if (d)
 	{
 		printf("Name: (nil)\n");
 	}
-	if (age < 0)
+	if (age < 1)
 	{
 		printf("Age: (nil)\n");
 	}
