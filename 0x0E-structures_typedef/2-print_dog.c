@@ -8,9 +8,9 @@
  **/
 void print_dog(struct dog *d)
 {
-	char *name, *owner;
-	float age;
-if (d != NULL)
+char *name, *owner;
+float age;
+if (d)
 {
 	name = (*d).name;
 	age = (*d).age;
@@ -19,16 +19,16 @@ if (d != NULL)
 	{
 		printf("Name: (nil)\n");
 	}
-	else if (name != NULL)
+	else
 	{
-		printf("Name: %s \n", name);
-		printf("Age: %f \n", age);
+		printf("Name: %s\n", name);
+		printf("Age: %f\n", age);
 	}
 	if (owner == NULL)
 	{
 		printf("Owner: (nil)\n");
 	}
-	else if (owner != NULL)
+	else
 	{
 		printf("Owner: %s\n", owner);
 	}
