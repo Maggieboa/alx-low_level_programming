@@ -19,13 +19,16 @@ if (d)
 	{
 		printf("Name: (nil)\n");
 	}
+	else
+	{
+		printf("Name: %s\n", name);
+	}
 	if (age < 1)
 	{
 		printf("Age: (nil)\n");
 	}
 	else
 	{
-		printf("Name: %s\n", name);
 		printf("Age: %f\n", age);
 	}
 	if (owner == NULL)
@@ -38,5 +41,4 @@ if (d)
 	}
 
 }
-printf(" ");
 }
