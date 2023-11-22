@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strlen_recursion:function to calc leng of an array
+ *_strlen_recursion-function to calc leng of an array
  *@s:placeholder variable for string
  *Return:length of a string or -1 if an error occurs
  *
