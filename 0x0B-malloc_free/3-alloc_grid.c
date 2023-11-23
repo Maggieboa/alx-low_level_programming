@@ -15,30 +15,31 @@ if (width <= 0 || height <= 0)
 {
 	return (NULL);
 }
-arr = malloc(sizeof(int *) * width);
+arr = malloc(height * sizeof(int *));
 if (arr == NULL)
 {
 	free(arr);
 	return (NULL);
 }
 
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-	arr[i] = malloc(sizeof(int) * height);
+	arr[i] = malloc(width * sizeof(int));
 	if (arr[i] == NULL)
 	{
 		for (j = i; j >= 0; j--)
-		{
-			free(arr[j]);
-		}
+		free(arr[j]);
 		free(arr);
 		return (NULL);
 	}
-
-	for (j = 0; j < height; j++)
+}
+for (i = 0; i < height; i++)
+{
+	for (j = 0; j < width; j++)
 	{
 		arr[i][j] = 0;
 	}
 }
+
 return (arr);
 }
