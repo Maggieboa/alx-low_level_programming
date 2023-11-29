@@ -35,7 +35,7 @@ if (length1 > n)
 	length1 = n;
 }
 
-s3 = malloc(sizeof(char) * x + 1);
+s3 = malloc(sizeof(char) * (x + 1));
 if (s3 == NULL)
 {
 	return (NULL);
