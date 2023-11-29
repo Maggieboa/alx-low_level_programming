@@ -30,6 +30,10 @@ for (length1 = 0; s2[length1]; length1++)
 	;
 }
 x = length + length1;
+if (length1 > n)
+{
+	length1 = n;
+}
 
 s3 = malloc(sizeof(char) * x + 1);
 if (s3 == NULL)
@@ -40,9 +44,9 @@ for (len = 0; len < length; len++)
 {
 	s3[len] = s1[len];
 }
-for (len = 0; len < n; len++)
+for (len = 0; len < length1; len++)
 {
-	s3[length + len] = s2[len];
+	s3[len + length] = s2[len];
 	s3[x] = '\0';
 }
 return (s3);
