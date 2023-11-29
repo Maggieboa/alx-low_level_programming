@@ -29,12 +29,11 @@ for (length1 = 0; s2[length1]; ++length1)
 {
 	;
 }
-x = length + length1;
 if (length1 > n)
 {
 	length1 = n;
 }
-
+x = length + length1;
 s3 = malloc(sizeof(char) * (x + 1));
 if (s3 == NULL)
 {
