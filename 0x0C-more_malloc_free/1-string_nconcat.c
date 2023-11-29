@@ -21,11 +21,11 @@ if (s2 == NULL)
 {
 	length1 = 0;
 }
-for (length = 0; s1[length]; length++)
+for (length = 0; s1[length]; ++length)
 {
 	;
 }
-for (length1 = 0; s2[length1]; length1++)
+for (length1 = 0; s2[length1]; ++length1)
 {
 	;
 }
