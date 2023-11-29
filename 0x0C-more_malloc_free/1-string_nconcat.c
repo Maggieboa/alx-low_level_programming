@@ -17,17 +17,23 @@ if (s1 == NULL)
 {
 	length = 0;
 }
+else
+{
+	for (length = 0; s1[length]; ++length)
+	{
+		;
+	}
+}
 if (s2 == NULL)
 {
 	length1 = 0;
 }
-for (length = 0; s1[length]; ++length)
+else
 {
-	;
-}
-for (length1 = 0; s2[length1]; ++length1)
-{
-	;
+	for (length1 = 0; s2[length1]; ++length1)
+	{
+		;
+	}
 }
 if (length1 > n)
 {
