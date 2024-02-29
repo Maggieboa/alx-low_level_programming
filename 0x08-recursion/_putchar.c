@@ -1,10 +1,11 @@
-#include <unistd.h>
+#include<unistd.h>
 /**
-*_putchar-function to return a character
-*@c:placeholder variable for a character
-*Return: returns the printed character
-**/
-int _putchar(char c)
+ *_printf-function to print to the console
+ *@c:placeholder variable for character to be printed
+ *Return: return the series of character to be printed in the console
+ *
+ **/
+char _putchar(char c)
 {
-return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }

@@ -1,19 +1,17 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
 /**
-*main-the main function
-*@argc:placeholder for number of arguments
-*@argv:placeholder for arguments in a functions
-*Return:0 for success
-*/
-int main(int argc, char __attribute__((unused)) *argv[])
+ *main-function to print number of args passed
+ *@argc: number of args in a cmd line
+ *@argv: args in a cmd line
+ *Return: 0 if successful
+ **/
+int main(int argc, char *argv[])
 {
-int i = 0;
-
-if (argc != '\0')
+for (argc = 0; argv[argc]; argc++)
 {
-	i = argc - 1;
-	printf("%d\n", i);
+	;
 }
+printf("%i\n", argc - 1);
+
 return (0);
 }

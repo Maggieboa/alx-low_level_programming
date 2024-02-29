@@ -1,4 +1,5 @@
-#ifndef _MAIN_PI_H
-#define _MAIN_PI_H
+#ifndef MAIN_H
+#define MAIN_H
 #define PI 3.14159265359
+#define NAME __FILE__
 #endif

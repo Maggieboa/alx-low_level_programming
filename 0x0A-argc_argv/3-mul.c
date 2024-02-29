@@ -1,23 +1,30 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
-*main-main function of the program
-*@argc:placeholder variable for the number of arguments
-*@argv:placeholder varaible for the arguments
-*Return: 0 if success and 1 if not successful
-*/
+ *main-function to calculate multiplication of numbers
+ *@argc: placeholder for # ofargs on cmd
+ *@argv: placeholder to the args
+ *Return: 0 if successful,1 for error
+ **/
 int main(int argc, char *argv[])
 {
-int x, y, z;
-
-if (argc < 3)
+int mul = 1, i;
+for (i = 0 ; i < argc; i++)
 {
-	printf("Error\n");
-	return (1);
+	;
 }
-x = atoi(argv[1]);
-y = atoi(argv[2]);
-z = x *y;
-printf("%d\n", z);
+	if (i >= 3)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			mul *= atoi(argv[i]);
+		}
+		printf("%d\n", mul);
+	}
+	if (i <= 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 return (0);
 }

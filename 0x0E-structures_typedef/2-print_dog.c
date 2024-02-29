@@ -1,31 +1,44 @@
 #include "dog.h"
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 /**
-*print_dog - main function
-*@d:placeholder variable
-*Return: void
-*
-*/
+ *print_dog-function to print a series of string
+ *@d: struct
+ *Return: void
+ **/
 void print_dog(struct dog *d)
 {
+char *name, *owner;
+float age;
 if (d)
 {
-	if (d->name == NULL)
+	name = (*d).name;
+	age = (*d).age;
+	owner = (*d).owner;
+	if (name == NULL)
 	{
 		printf("Name: (nil)\n");
 	}
 	else
 	{
-		printf("Name: %s\n", d->name);
-		printf("Age: %f\n", d->age);
+		printf("Name: %s\n", name);
 	}
-	if (d->owner == NULL)
+	if (age < 1)
+	{
+		printf("Age: (nil)\n");
+	}
+	else
+	{
+		printf("Age: %f\n", age);
+	}
+	if (owner == NULL)
 	{
 		printf("Owner: (nil)\n");
 	}
 	else
 	{
-		printf("Owner: %s\n", d->owner);
+		printf("Owner: %s\n", owner);
 	}
+
 }
 }

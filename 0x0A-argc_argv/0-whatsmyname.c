@@ -1,15 +1,12 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdio.h>
 /**
- *main-the main function of the program
- *@argc:Placeholder variable for calc. the number of function
- *@argv:placeholder variable
- *Return:0 for success
- */
-int main(int __attribute__((unused)) argc, char *argv[])
+ *main-main function
+ *@argc:counts the number of cmd  line arguments
+ *@argv: an array of arguments
+ *Return: 0 is successful
+ **/
+int main(__attribute__((unused))int argc, char *argv[])
 {
-	int i = 0;
-
-	printf("%s\n", argv[i]);
+	printf("%s\n", argv[0]);
 	return (0);
 }

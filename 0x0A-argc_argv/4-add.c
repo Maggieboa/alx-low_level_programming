@@ -1,31 +1,36 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<stdlib.h>
-#include<ctype.h>
 /**
-*main-main function of the program
-*@argc:placeholder variable for the number of arguments
-*@argv:placeholder varaible for the arguments
-*Return: 0 if success and 1 if not successful
-*/
+ *main-function to calculate sum
+ *@argc:placeholder for # of args in cmd line
+ *@argv: cmd line args
+ *Return: 1 if error 0 if success
+ **/
 int main(int argc, char *argv[])
 {
-int sum, i, z;
+int i, sum = 0;
+char *str = "";
 
-sum = 0;
-
-for (i = 1; i < argc; i++)
+for (i = 0; i < argc; i++)
 {
-	for (z = 0; argv[i][z] != '\0'; z++)
+	;
+}
+if (i <= 1)
+{
+	printf("0\n");
+}
+if (i > 1)
+{
+	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i][z]))
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			printf("Error\n");
 			return (1);
 		}
+		sum += atoi(argv[i]);
 	}
-sum += atoi(argv[i]);
-}
 printf("%d\n", sum);
-
+}
 return (0);
 }

@@ -1,11 +1,10 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
 /**
-*main-main function of our program
-*@argc:PLaceholder variable for the number of arguments
-*@argv:PLaceholder variable for the arguments in a function
-*Return:0 if successful or 1 if not successful
-*/
+ *main-function to print all args followed by a new line
+ *@argc:number of args in a cmd line
+ *@argv: cmdline args
+ *Return: 0 if successful
+ **/
 int main(int argc, char *argv[])
 {
 int i;
