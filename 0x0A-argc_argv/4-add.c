@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 int i, sum = 0;
 char *str = "";
 
+<<<<<<< Updated upstream
 for (i = 0; i < argc; i++)
 {
 	;
@@ -20,6 +21,14 @@ if (i <= 1)
 	printf("0\n");
 }
 if (i > 1)
+=======
+sum = 0;
+if (argc < 1)
+{
+	printf("0\n");
+}
+for (i = 1; i < argc; i++)
+>>>>>>> Stashed changes
 {
 	for (i = 1; i < argc; i++)
 	{
