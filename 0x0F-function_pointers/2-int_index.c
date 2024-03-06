@@ -15,9 +15,13 @@ int i;
 		{
 			for (i = 0; i < size; i++)
 			{
-				if (cmp(array[i]) != 0)
+				while (i < size)
 				{
-					return (i);
+					if (cmp(array[i]) != 0)
+					{
+						return (i);
+					}
+					i++;
 				}
 			}
 		}
